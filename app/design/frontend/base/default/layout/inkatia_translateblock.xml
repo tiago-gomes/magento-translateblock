@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="content">
+			<block type="translateblock/translateblock" name="translateblock_example" as="translateblock_example" template="inkatia_translateblock/example.phtml" />
+		</reference>
+	</default>
+</layout>

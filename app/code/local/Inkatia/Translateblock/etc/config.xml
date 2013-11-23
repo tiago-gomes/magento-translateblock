@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Inkatia_Translateblock>
+			<version>0.1.0</version>
+		</Inkatia_Translateblock>
+	</modules>
+	<frontend>
+		<routers>
+		   <translateblock>
+			   <use>standard</use>
+			   <args>
+				   <module>Inkatia_Translateblock</module>
+				   <frontName>translateblock</frontName>
+			   </args>
+		   </translateblock>
+		</routers>
+		<layout>
+			  <updates>
+				  <translateblock module="Inkatia_Translateblock">
+					  <file>inkatia_translateblock.xml</file>
+				  </translateblock>
+			  </updates>
+		</layout>
+		<translate>
+            <modules>
+                <Inkatia_Translateblock>
+                    <files>
+                        <default>Inkatia_Translateblock.csv</default>
+                    </files>
+                </Inkatia_Translateblock>
+            </modules>
+        </translate>
+	</frontend>
+	<global>
+		<helpers>
+			<translateblock>
+				<class>Inkatia_Translateblock_Helper</class>
+			</translateblock>
+		</helpers>
+		<blocks>
+		    <translateblock>
+				<class>Inkatia_Translateblock_Block</class>
+			</translateblock>
+		</blocks>
+	</global>
+</config>
